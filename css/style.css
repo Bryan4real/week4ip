@@ -1,0 +1,50 @@
+@import url('bootstrap.css');
+@import url('swiper.min.css');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+.headr{
+  background: url('../images/head.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+}
+.logo img{
+  margin-left: 50%;
+  width: 100px;
+  height: 130px;
+}
+.box{
+
+  margin-top: 2%;
+  margin-bottom: 0;
+  background-size: cover;
+}
+.box label{
+  border: 1px solid #fff;
+  width: 85px;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  float: left;
+}
+.box select{
+  border-radius: 28px;
+  font-size: 18px;
+  float: right;
+  margin-left: 15%;
+  align-items:center;
+}
+.canva{
+  width: 30%;
+}
+.canva img{
+  width: 100%;
+}
+.canva img:hover{
+  width: 120%;
+}
