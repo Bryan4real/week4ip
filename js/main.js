@@ -1,7 +1,7 @@
 
 let total = 0;
 let checkOut = 0;
-let nOrder = 0;
+
 function GetPizza(name, size, crust, topping, total) {
   this.name = name;
   this.size = size;
@@ -14,7 +14,7 @@ $("button.smt").click(function(event) {
   let pcrust = $(".crust option:selected").val();
   let ptopping = $(".topping option:selected").val();
 
-
+  let nOrder = 0;
 
   total = parseInt(psize) + parseInt(pcrust) + parseInt(ptopping);
   nOrder = +1;
@@ -26,13 +26,13 @@ $("button.smt").click(function(event) {
   $("#tPizza").html($(".topping option:selected").val());
   $("#totals").html(total);
 
-  $("button.addPizza").click(function() {
+  $("button.addPizza").click(function(event) {
     let psize = $(".size option:selected").val();
     let pcrust = $(".crust option:selected").val();
     let ptopping = $(".topping option:selected").val();
 
     checkOut = checkOut + total;
-    nOrder = ++;
+    nOrder = nOrder +1;
     newOrder = new GetPizza(name, psize, pcrust, ptopping, total);
     $("#orders").append(
       `<tr><td id="nOrder">` +
@@ -47,6 +47,7 @@ $("button.smt").click(function(event) {
         newOrder.total +
         `</td></tr>`
     );
+    event.preventDefault();
     });
 
   event.preventDefault();
