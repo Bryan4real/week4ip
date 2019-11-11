@@ -50,7 +50,16 @@ $("button.smt").click(function(event) {
         `</td></tr>`
     );
     event.preventDefault();
-    });
+});
+
+  $("button#checkout").click(function(event) {
+  $("button#checkout").hide();
+  $("button.addPizza").hide();
+  $("button#deliver").slideDown(1000);
+  $("#totalPizza").append("Your bill is ksh. " + checkOut);
+
+  event.preventDefault();
+});
 
   event.preventDefault();
 });

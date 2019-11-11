@@ -49,7 +49,9 @@
                 <option value="150">Cheese - Kshs. 150</option>
               </select><br>
               <button  class="smt" name="button">Button</button>
-              <button name="button" class="addPizza" onsubmit="result=false">addPizzaa</button>
+              <button name="button" class="addPizza">addPizzaa</button>
+              <button type="button" name="button" class="checkout">chout</button>
+              <button type="button" name="button" class="deliver">Delivery</button>
           </form>
           </div>
         </div>
@@ -64,6 +66,9 @@
 </div>
     <div class="container">
       <div class="row">
+        <div class="choice">
+          <h2>Your order is : </h2>
+        </div>
         <div id="your-orders">
               <table class="table table-sm  pizzatable">
                 <thead>
@@ -85,7 +90,7 @@
                   </tr>
                 </tbody>
               </table>
-              <p id="tPizza"></p>
+              <p id="totalPizza"></p>
               <p id="bTotal"></p>
               <p id="addedprice">Delivery will cost sh. 200</p>
               <p id="fMessage"></p>
