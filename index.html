@@ -22,7 +22,7 @@
       <div class="row">
         <div class="col-md-4">
 
-        <form class="box">
+        <form class="box form-group">
             <img src="images/p1.jpg" alt=""><br>
             <hr>
             <div class="fb">
@@ -48,10 +48,10 @@
                 <option value="150">Sausage - Kshs. 150</option>
                 <option value="150">Cheese - Kshs. 150</option>
               </select><br>
-              <button  class="smt" name="button">Button</button>
-              <button name="button" class="addPizza">addPizzaa</button>
-              <button type="button" name="button" class="checkout">chout</button>
-              <button type="button" name="button" class="deliver">Delivery</button>
+              <button  class="smt btn btn-secondary bg-secondary" name="button">Button</button>
+              <button name="button" class="btn btn-secondary bg-secondary  addPizza">addPizzaa</button>
+              <button type="button" name="button" class="btn btn-secondary bg-secondary  checkout">check Out</button>
+              <button type="button" name="button" class="btn btn-secondary deliver bg-secondary ">Delivery</button>
           </form>
           </div>
         </div>
@@ -68,7 +68,7 @@
       <div class="row">
         <div class="choice">
           <h2>Your order is : </h2>
-        </div>
+
         <div id="your-orders">
               <table class="table table-sm  pizzatable">
                 <thead>
@@ -95,7 +95,17 @@
               <p id="addedprice">Delivery will cost sh. 200</p>
               <p id="fMessage"></p>
             </div>
-
+              </div>
+              <div class="delivery">
+                  <form action="" id="form">
+                    <div class="form-group">
+                      <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                      <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
+                      <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                      <button class="btn btn-secondary bg-secondary " id="final-order">Confirm Order</button>
+                    </div>
+                  </form>
+              </div>
       </div>
     </div>
 
