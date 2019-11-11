@@ -7,7 +7,7 @@
     <title></title>
   </head>
   <body>
-    <div class="container-flex">
+    <div class="container">
       <div class="row">
         <div class="headr">
           <div class="logo">
@@ -20,44 +20,79 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="canva">
+        <div class="col-md-4">
+
         <form class="box" action="index.html" method="post">
             <img src="images/p1.jpg" alt=""><br>
-              <label for="">size</label><br>
+            <hr>
+            <div class="fb">
+              <h5>SIZE</h5>
               <select class="size" name="">
-                  <option value="small">small  - Kshs. 800</option>
-                  <option value="medium">medium  - Kshs. 1000</option>
-                  <option value="large">large  - Kshs. 1200</option>
+                  <option value="800">small  - Kshs. 800</option>
+                  <option value="1000">medium  - Kshs. 1000</option>
+                  <option value="1200">large  - Kshs. 1200</option>
               </select><br>
-              <label for="">Crust</label><br>
-              <select class="size" name="">
-                  <option value="crispy">crispy - Kshs. 200</option>
-                  <option value="stuffed">stuffed - Kshs. 300</option>
-                  <option value="gluttenFree">gluttenFree - Kshs. 400</option>
+              <hr>
+              <h5>CRUST</h5>
+
+              <select class="crust" name="">
+                  <option value="200">crispy - Kshs. 200</option>
+                  <option value="300">stuffed - Kshs. 300</option>
+                  <option value="400">gluttenFree - Kshs. 400</option>
               </select><br>
-              <label for="">Toppings</label><br>
-              <select class="size" name="">
-                  <option value="pepperoni">pepperoni - Kshs. 150</option>
-                  <option value="mushroom">mushroom - Kshs. 150</option>
-                  <option value="bacon">bacon - Kshs. 150</option>
-                  <option value="sausage">sausage - Kshs. 150</option>
-                  <option value="blackOlives">blackOlives - Kshs. 150</option>
-                  <option value="cheese">cheese - Kshs. 150</option>
+              <hr>
+              <h5>TOPPINGS</h5>
+              <select class="topping" name="">
+                <option value="150">Mushroom - Kshs. 150</option>
+                <option value="150">Bacon - Kshs. 150</option>
+                <option value="150">Sausage - Kshs. 150</option>
+                <option value="150">Cheese - Kshs. 150</option>
               </select>
+              <button type="button" class="smt">submit</button>
           </form>
         </div>
-      </div>
-    </div>
+          <div class="col-md-4">
 
+          </div>
+          <div class="col-md-4">
+
+          </div>
+      </div>
+  </div>
     <div class="container">
       <div class="row">
+        <div id="your-orders">
+              <table class="table table-sm  pizzatable">
+                <thead>
+                  <tr>
 
+                    <th scope="col">Size</th>
+                    <th scope="col">Crust</th>
+                    <th scope="col">Topping</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="orders">
+                  <tr>
+                    <td id="nOrder"></td>
+                    <td id="sPizza"></td>
+                    <td id="cPizza"></td>
+                    <td id="tPizza"></td>
+                    <td id="totals"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p id="tPizza"></p>
+              <p id="bTotal"></p>
+              <p id="addedprice">Delivery will cost sh. 200</p>
+              <p id="fMessage"></p>
+            </div>
       </div>
     </div>
 
 
     <script src="js/jquery-3.4.1.js"></script>
-    <script src="swiper.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -6,7 +6,7 @@
   margin: 0;
 }
 .headr{
-  background: url('../images/head.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/head.jpg');
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -18,10 +18,21 @@
   height: 130px;
 }
 .box{
-
   margin-top: 2%;
   margin-bottom: 0;
   background-size: cover;
+}
+input[type="checkbox"]{
+margin-left: 10%;
+text-align: center;
+}
+
+h4{
+  color: #fff;
+  margin-left: 20%;
+}
+h5{
+  text-align: center;
 }
 .box label{
   border: 1px solid #fff;
@@ -37,14 +48,23 @@
   font-size: 18px;
   float: right;
   margin-left: 15%;
-  align-items:center;
+  margin-bottom: 2%;
+  align-items: center;
 }
-.canva{
-  width: 30%;
+#your-orders{
+  margin-top: 5%;
+  font-size: 20px;
 }
-.canva img{
+  .col-md-4{
+    width: 50%;
+  }
+
+.box img {
+
   width: 100%;
 }
-.canva img:hover{
+
+.box img:hover{
   width: 120%;
+  transition: 1s ease-in;
 }

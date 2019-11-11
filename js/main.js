@@ -1,38 +1,29 @@
-// var pizza = {
-//   small: 800,
-//   medium: 1000,
-//   large:1200,
-//   crust: {},
-//   toppings: {}
-// };
-// pizza.crust = {
-//   crispy: 200,
-//   stuffed: 300,
-//   gluttenFree: 400
-// };
-// pizza.toppings = {
-//   pepperoni: 150,
-//   mushrooms: 150,
-//   bacon: 150,
-//   sausage: 150,
-//   blackOlives: 150,
-//   cheese: 150
-// };
+
+let total = 0;
+let checkOut = 0;
+let nOrder = 0;
+function GetPizza(name, size, crust, topping, total) {
+  this.name = name;
+  this.size = size;
+  this.crust = crust;
+  this.topping = topping;
+  this.total = total;
+}
+$("button.smt").click(function(event) {
+  let psize = $(".size option:selected").val();
+  let pcrust = $(".crust option:selected").val();
+  let ptopping = $(".topping option:selected").val();
 
 
-var swiper = new Swiper('.swiper-container', {
-  effect: 'coverflow',
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  coverflowEffect: {
-    rotate: 30,
-    stretch: 0,
-    depth: 200,
-    modifier: 1,
-    slideShadows : true,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-  },
+
+  total = parseInt(psize) + parseInt(pcrust) + parseInt(ptopping);
+  nOrder = +1;
+  checkOut = checkOut + total;
+  $("#nOrder").html(nOrder);
+  $("#sPizza").html($(".size option:selected").val());
+  $("#cPizza").html($(".crust option:selected").val());
+  $("#tPizza").html($(".topping option:selected").val());
+  $("#totals").html(total);
+  console.log(total);
+  event.preventDefault();
 });
