@@ -31,6 +31,8 @@ $("button.smt").click(function(event) {
     let pcrust = $(".crust option:selected").val();
     let ptopping = $(".topping option:selected").val();
 
+    total = parseInt(psize) + parseInt(pcrust) + parseInt(ptopping);
+
     checkOut = checkOut + total;
     nOrder = nOrder +1;
     newOrder = new GetPizza(name, psize, pcrust, ptopping, total);
