@@ -78,7 +78,6 @@ $("button.deliver").click(function() {
   );
 });
 
-
 $("button#final-order").click(function(event) {
   event.preventDefault();
   $("#pizzatotal").hide();
@@ -103,7 +102,7 @@ $("button#final-order").click(function(event) {
         deliceryAmount
     );
     $("#totalbill").hide();
-    $("#finallmessage").slideDown(1200);
+    $("#fmessage").slideDown(1200);
   } else {
     alert("Please fill in the deliver details");
     $(".delivery").show();
