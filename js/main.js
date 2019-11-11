@@ -19,6 +19,7 @@ $("button.smt").click(function(event) {
   total = parseInt(psize) + parseInt(pcrust) + parseInt(ptopping);
   nOrder = +1;
   checkOut = checkOut + total;
+
   $("#nOrder").html(nOrder);
   $("#sPizza").html($(".size option:selected").val());
   $("#cPizza").html($(".crust option:selected").val());
