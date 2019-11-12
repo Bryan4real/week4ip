@@ -99,8 +99,9 @@ border-radius: 18px;
 }
 
 .pizzatable{
+  size: cover;
   margin-top: 3%;
- margin-left: 50%;
+  margin-left: 50%;
 }
 .butt{
   display: none;

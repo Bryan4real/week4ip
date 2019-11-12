@@ -25,19 +25,19 @@
       <div class="row">
         <div class="col-md-4">
           <a href="#boxO">
-          <img id="im1" src="images/p1.jpg" alt=""><br>
+          <img id="im1" src="images/p1.jpg" alt="">
           </a>
           <h5 class="hdr">Iranian Pizza</h5>
         </div>
         <div class="col-md-4">
           <a href="#boxO">
-          <img id="im2" src="images/p2.jpg" alt=""><br>
+          <img id="im2" src="images/p2.jpg" alt="">
         </a>
           <h5  class="hdr">Greek Pizza</h5>
         </div>
         <div class="col-md-4">
           <a href="#boxO">
-          <img id="im3" src="images/p3.jpg" alt=""><br>
+          <img id="im3" src="images/p3.jpg" alt="">
         </a>
           <h5 class="hdr">Neapolitan Pizza</h5>
         </div>
@@ -48,6 +48,12 @@
       <form id="boxO" class="box form-group">
             <hr>
             <div id="p1" class="fb">
+              <h5>Piza Name</h5>
+              <select class="browser-default custom-select custom-select-md mb-3 name" name="">
+                  <option value="Iranian">Iranian Pizza</option>
+                  <option value="Greek">Greek Pizza</option>
+                  <option value="Neapolitan">Neopolitan Pizza</option>
+              </select><br>
               <h5>SIZE</h5>
               <select class="browser-default custom-select custom-select-md mb-3 size" name="">
                   <option value="800">small  - Kshs. 800</option>
@@ -84,6 +90,7 @@
                 <thead>
                   <tr>
                     <th scope="col">Order No.</th>
+                    <th scope="col">Name</th>
                     <th scope="col">Size</th>
                     <th scope="col">Crust</th>
                     <th scope="col">Topping</th>
@@ -93,6 +100,7 @@
                 <tbody id="orders">
                   <tr>
                     <td id="nOrder"></td>
+                    <td id="pname"></td>
                     <td id="sPizza"></td>
                     <td id="cPizza"></td>
                     <td id="tPizza"></td>
