@@ -110,5 +110,13 @@ $("button#final-order").click(function(event) {
   }
 });
 
-
+});
+$('.col-md-4 #im1').click(function(){
+$('#p1').toggle(500);
+});
+$('.col-md-4 #im2').click(function(){
+$('#p1').toggle(500);
+});
+$('.col-md-4 #im3').click(function(){
+$('#p1').toggle(500);
 });
