@@ -1,7 +1,7 @@
 #  Pizza Palace
   Pizza palace is a order and delivery platform that gives you the comfort of seating back and getting your pizza order at the comfort of your living room or anywhere you would desire it delivered.
 
-  [link to platform](https://bryan4real.github.io/week3ip/)
+  [link to platform](https://bryan4real.github.io/week4ip/)
 
 # Description
 > on landing on the page it user comprehensive and  can be navigated with out much hustle. all you need is a few click and your order is done. On the landing page you will be able to select your order by simply clicking on the images representing your desired order.
