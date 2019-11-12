@@ -94,14 +94,14 @@ $("button#final-order").click(function(event) {
     $("input#phone").val() &&
     $("input#location").val() != ""
   ) {
-    $("#finallmessage").append(
+    $("#fmessage").append(
       person +
         ", We have recieved your order and the delivery wil be made  at  " +
         location +
         ". Prepare ksh. " +
         deliceryAmount
     );
-    $("#totalbill").hide();
+    $("#bTotal").hide();
     $("#fmessage").slideDown(1200);
   } else {
     alert("Please fill in the deliver details");

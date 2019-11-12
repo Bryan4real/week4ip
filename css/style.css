@@ -65,14 +65,39 @@ h5{
 }
 
 .box img:hover{
-  width: 120%;
+  width: 110%;
   transition: 1s ease-in;
+  position: absolute;
+  z-index: 1;
 }
-.smt, .addPizza{
+.smt, .addPizza, .deliver,.checkout{
 margin-top: 5%;
+width: 50%;
 display: block;
 margin-left: auto;
 margin-right: auto;
-width: 50%;
+margin-top: 2%;
+margin-bottom: 2%;
 border-radius: 18px;
+}
+
+.pizzatable{
+ margin-left: 50%;
+}
+.butt{
+  display: block;
+  width: 100%;
+}
+.fb{
+  display: none;
+}
+.choise{
+  display: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.delivery{
+  display: none;
+  padding-left: 10%;
+  padding-right: 10%;
 }
