@@ -120,3 +120,6 @@ $('#p1').toggle(500);
 $('.col-md-4 #im3').click(function(){
 $('#p1').toggle(500);
 });
+$('.smt').click(function(){
+$('.butt').fadeIn(1000);
+});
