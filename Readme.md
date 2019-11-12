@@ -1,10 +1,17 @@
-#  Delani Studio
-  Delani studio is a platform for a company that offers software development and product management. The platform contains sections that elaborates what they are all about.
+#  Pizza Palace
+  Pizza palace is a order and delivery platform that gives you the comfort of seating back and getting your pizza order at the comfort of your living room or anywhere you would desire it delivered.
 
   [link to platform](https://bryan4real.github.io/week3ip/)
 
 # Description
-> On navigating through the website's sections you will interact with the services segment where on clicking the icon you will find full information on what is offered.
+> on landing on the page it user comprehensive and  can be navigated with out much hustle. all you need is a few click and your order is done. On the landing page you will be able to select your order by simply clicking on the images representing your desired order.
+
+## Screenshots
+
+  ![SCREENSHOT](images/screen1.png)
+
+  ![SCREENSHOT](images/screen2.png)
+
 
 # Technologies used
 
@@ -20,9 +27,7 @@
 
 # Bugs
 
-  - user can enter numbers on the name section in the form section
-  - social media icons have not yet been linked.
-
+  - No known Bugs.
 # support
 mwiruki@outlook.com
 

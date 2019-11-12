@@ -114,7 +114,7 @@ $("button#final-order").click(function(event) {
     $(".delivery").show();
     $("button#final-order").show();
   }
-event.preventDefault();
+// event.preventDefault();
 });
 
 });
