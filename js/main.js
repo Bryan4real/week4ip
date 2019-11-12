@@ -114,12 +114,15 @@ event.preventDefault();
 });
 $('.col-md-4 #im1').click(function(){
 $('#p1').toggle(500);
+$('.choice h2').toggle(700);
 });
 $('.col-md-4 #im2').click(function(){
 $('#p1').toggle(500);
+$('.choice h2').toggle(700);
 });
 $('.col-md-4 #im3').click(function(){
 $('#p1').toggle(500);
+$('.choice h2').toggle(700);
 });
 $('.smt').click(function(){
 $('.butt').fadeIn(1000);
