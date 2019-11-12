@@ -4,6 +4,7 @@
 *{
   padding: 0;
   margin: 0;
+  font-family: 'Yeon Sung', cursive;
   }
 body{
     background-color: #d4b561;
@@ -35,6 +36,7 @@ text-align: center;
 h4{
   color: #fff;
   margin-left: 20%;
+  font-size: 38px;
 }
 h5{
   text-align: center;
