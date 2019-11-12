@@ -83,7 +83,7 @@ $("button#final-order").click(function(event) {
   $("#pizzatotal").hide();
   $(".delivery").hide();
   $("button#final-order").hide();
-  let deliceryAmount = checkoutTotal + 150;
+  let dAmount = checkOut + 150;
 
   let person = $("input#name").val();
   let phone = $("input#phone").val();
@@ -94,20 +94,21 @@ $("button#final-order").click(function(event) {
     $("input#phone").val() &&
     $("input#location").val() != ""
   ) {
-    $("#fmessage").append(
+    $("#fMessage").append(
       person +
-        ", We have recieved your order and the delivery wil be made  at  " +
+        ", We have recieved your order and the delivery wil be made  to  " +
         location +
-        ". Prepare ksh. " +
-        deliceryAmount
+        ". Payment is ksh. " +
+        dAmount
     );
     $("#bTotal").hide();
-    $("#fmessage").slideDown(1200);
+    $("#fMessage").slideDown(1200);
   } else {
     alert("Please fill in the deliver details");
     $(".delivery").show();
     $("button#final-order").show();
   }
+event.preventDefault();
 });
 
 });
